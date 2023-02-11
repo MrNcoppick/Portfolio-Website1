@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <title>Nicholas Coppick-Projects</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-img1">
+        <img class="stretch" src="images/Header-Mountain.jpg" alt="Mountain" />
+      </div>
+      <div class="header-img2">
+        <img src="images/Header-Mountain.jpg" alt="" />
+        <div class="name">
+          Nicholas <br />
+          Coppick
+        </div>
+      </div>
+      <div class="nav-link one">
+        <a href="projects.html">Projects</a>
+      </div>
+      <div class="nav-link two">
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="mainbody-wrapper">
+        <div class="center-box">
+            <div class="main-body">
+                <div class="window" id="window"></div>
+                <div class="calculator">
+                    <div class="box" onclick="action('&#128516')">&#128516</div>
+                    <div class="box" onclick="action('(')">(</div>
+                    <div class="box" onclick="action(')')">)</div>
+                    <div class="box" onclick="remove()">Clear</div>
+                    <div class="box" onclick="action(1)">1</div>
+                    <div class="box" onclick="action(2)">2</div>
+                    <div class="box" onclick="action(3)">3</div>
+                    <div class="box" onclick="action('+')">+</div>
+                    <div class="box" onclick="action(4)">4</div>
+                    <div class="box" onclick="action(5)">5</div>
+                    <div class="box" onclick="action(6)">6</div>
+                    <div class="box" onclick="action('-')">-</div>
+                    <div class="box" onclick="action(7)">7</div>
+                    <div class="box" onclick="action(8)">8</div>
+                    <div class="box" onclick="action(9)">9</div>
+                    <div class="box" onclick="action('*')">*</div>
+                    <div class="box" id="empty"></div>
+                    <div class="box" onclick="action(0)">0</div>
+                    <div class="box" onclick="action('/')">/</div>
+                    <div class="box" onclick="answer()">=</div>
+                </div>
+                <h5 class="center bottom">
+            <br /><br /><br /><br />
+            <a href="index.html">Home</a>
+            </h5>
+            </div>
+        </div>
+    </div>
+
+    <script src="calcscript.js"></script>
+    <script src="http://nerdamer.com/js/nerdamer.core.js"></script>
+  </body>
+</html>
